@@ -1,0 +1,14 @@
+@import './variable.scss';
+
+%button{
+    background-color: $primary-button-color;
+    width: $primary-button-width;
+    height: $primary-button-height;
+    display: block;
+    margin: 10px;    
+}
+.btn{
+    @extend %button;
+    color: $primary-button-text-color;
+    border: 1px solid $primary-button-border-color;    
+}
